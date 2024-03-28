@@ -1,0 +1,262 @@
+﻿BveTs Map 2.00:UTF-8
+
+#JR富山港線(2006)
+
+0;
+#Sound.Load('Sound.txt');
+#Sound3d.Load('Sound3D.txt');
+Structure.Load('Structures.txt');
+Station.Load('Stations_1145M.csv');
+#Signal.Load('Signals.csv');
+Light.Ambient(0.9, 0.86, 0.86);
+Light.Diffuse(1, 1, 1);
+Light.Direction(55, -40);
+Irregularity.Change( 0.0010, 0.0040, 0.0010, 50, 25, 12.5 );	
+BackGround.Change('Bg');
+repeater['Ballast'].Begin(0,0,0,0,0,0,0,3,5,5,'Ballast1','Ballast2','Ballast3','Ballast4');
+repeater['Grass'].Begin('Grass',0,0,0,0,0,0,1,24,24,'Grass');
+repeater['BlankL'].Begin('grass',1,0.4,0,0,0,0,1,25,25,'BlankL_01','BlankL_02','BlankL_03');
+repeater['BlankR'].Begin('grass',-1,0.4,0,0,0,0,1,25,25,'BlankR_03','BlankR_01','BlankR_02');
+Track['grass'].Position(0,-0.4);
+
+Curve.Interpolate(0, 0);
+600;
+Curve.Interpolate(-160, -0.105);
+
+730;
+#富山口停目
+
+743;
+#踏切
+
+900;
+Curve.Interpolate(-160, -0.105);
+
+960;
+#富山口踏切 R160終了
+Curve.Interpolate(0, 0);
+
+1060;
+Curve.Interpolate(0, 0);
+#橋梁
+
+1080;
+Curve.Interpolate(-200, -0.105);
+#橋梁終了 R200
+
+1130;
+Curve.Interpolate(-200, -0.105);
+1150;
+Curve.Interpolate(0, 0);
+#R200終了
+
+1250;
+#中学校踏切(2車線)
+
+1355;
+#越原割踏切
+
+1395;
+Curve.Interpolate(0, 0);
+
+1415;
+Curve.Interpolate(600, 0.06);
+
+#R600
+
+1515;
+Curve.Interpolate(600, 0.06);
+#R600終了
+
+1530;
+Curve.Interpolate(0, 0);
+
+1600;
+#歌塚踏切
+
+1915;
+#富山化学踏切
+
+2030;
+Curve.Interpolate(0, 0);
+2050;
+Curve.Interpolate(-400, -0.05);
+#R400?左
+
+2070;
+Curve.Interpolate(0, 0);
+
+2110;
+Curve.Interpolate(800, 0.03);
+#下奥井ホーム開始
+
+2150;
+#R600→(?)終了
+Curve.Interpolate(0, 0);
+
+2200;
+Curve.Interpolate(0, 0);
+Curve.Interpolate(200, 0);
+#ホーム端 R200S字
+
+2225;
+Curve.Interpolate(200, 0);
+Curve.Interpolate(-200, 0);
+
+2250;
+Curve.Interpolate(-200, 0);
+Curve.Interpolate(0, 0);
+#下奥井踏切
+
+2365;
+#茶木板張踏切
+
+2545;
+#古苗代踏切
+
+2640;
+#R400
+
+2705;
+#R400終了
+
+3120;
+#市田開踏切
+
+3180;
+#R600
+
+3265;
+#R600終了
+
+3365;
+#越中中島ホーム端
+
+3425;
+#越中中島ホーム端
+
+3440;
+#粟島踏切
+
+3855;
+#流田割踏切
+
+3975;
+#富山高岡バイパス
+
+4005;
+#ここまで
+
+4155;
+#橋梁
+
+4165;
+#ここまで
+
+4250;
+#豊田踏切
+
+4310;
+#城川原待避線分岐機
+
+4350;
+#側線合流
+
+4355;
+#構内踏切、ホーム端
+
+4440;
+#ホーム端
+
+4475;
+#待避線合流
+
+4515;
+#城川原踏切
+
+4820;
+#高屋敷田踏切
+
+5270;
+#住友運河
+
+5285;
+#終了
+
+5338;
+#御坊屋敷踏切
+
+5610;
+#蓮町踏切
+
+5625;
+#蓮町ホーム端
+
+5715;
+#蓮町ホーム端
+
+6025;
+#千原崎踏切
+
+6230;
+#R400
+
+6300;
+#米田踏切
+
+6310;
+#大広田ホーム端
+
+6390;
+#大広田ホーム端
+
+6395;
+#小野田踏切
+
+6585;
+#高畠踏切
+
+6695;
+#東岩瀬ホーム端
+
+6785;
+#東岩瀬ホーム端
+
+6790;
+#御蔵町踏切
+
+7075;
+#赤田踏切
+
+7165;
+#白山踏切
+
+7190;
+#競輪場前ホーム端
+
+7245;
+#R400
+
+7310;
+#競輪場前ホーム端
+
+7385;
+#岩瀬運河
+
+7400;
+#ここまで
+
+7490;
+#R400終了
+
+7510;
+#側線分岐
+
+7590;
+#岩瀬浜ホーム端
+
+7680;
+#岩瀬浜ホーム端、R160
+
+7695;
+#車止め

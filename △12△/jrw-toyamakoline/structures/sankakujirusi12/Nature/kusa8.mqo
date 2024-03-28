@@ -1,0 +1,40 @@
+Metasequoia Document
+Format Text Ver 1.0
+
+Scene {
+	pos 0.0000 0.0000 6144.0000
+	lookat 0.0000 0.0000 0.0000
+	head -0.3336
+	pich 0.1836
+	bank 0.0000
+	ortho 0
+	zoom2 1.2207
+	amb 0.250 0.250 0.250
+	dirlights 1 {
+		light {
+			dir 0.408 0.408 0.816
+			color 1.000 1.000 1.000
+		}
+	}
+}
+Material 1 {
+	"mat1" col(1.000 1.000 1.000 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.000) power(5.00) tex("kusa4.png") proj_type(1) proj_pos(0.000 95.466 0.000) proj_scale(-310.734 96.236 0.001) proj_angle(0.000 0.000 0.000)
+}
+Object "obj1" {
+	visible 15
+	locking 0
+	shading 1
+	facet 59.5
+	color 0.898 0.498 0.698
+	color_type 0
+	vertex 4 {
+		-310.7343 191.7024 0.0000
+		310.7343 191.7024 0.0000
+		-310.7343 -0.7698 0.0000
+		310.7343 -0.7698 0.0000
+	}
+	face 1 {
+		4 V(0 1 3 2) M(0) UV(1.00000 0.00000 0.00000 0.00000 0.00000 1.00000 1.00000 1.00000)
+	}
+}
+Eof
