@@ -1,0 +1,12 @@
+BveTs Train 1.01:UTF-8
+[structure]
+key=DC120
+distance=40
+z=10.8
+span=10.8
+
+[structure]
+key=DC120_toyama
+distance=40
+z=10.8
+span=10.8

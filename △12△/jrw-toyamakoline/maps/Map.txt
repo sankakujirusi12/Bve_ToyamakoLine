@@ -14,28 +14,39 @@ Light.Direction(55, -40);
 Irregularity.Change( 0.0010, 0.0040, 0.0010, 50, 25, 12.5 );	
 BackGround.Change('Bg');
 repeater['Ballast'].Begin(0,0,0,0,0,0,0,3,5,5,'Ballast1','Ballast2','Ballast3','Ballast4');
-repeater['Grass'].Begin('Grass',0,0,0,0,0,0,1,24,24,'Grass');
-repeater['BlankL'].Begin('grass',1,0.4,0,0,0,0,1,25,25,'BlankL_01','BlankL_02','BlankL_03');
-repeater['BlankR'].Begin('grass',-1,0.4,0,0,0,0,1,25,25,'BlankR_03','BlankR_01','BlankR_02');
+repeater['Grass'].Begin('Grass',0,-0.3,0,0,0,0,1,24,24,'Grass');
+repeater['BlankL'].Begin('grass',1,0.3,0,0,0,0,1,25,25,'BlankL_01','BlankL_02','BlankL_03');
+repeater['BlankR'].Begin('nobori',-1,-0.1,0,0,0,0,1,25,25,'BlankR_03','BlankR_01','BlankR_02');
 Track['grass'].Position(0,-0.4);
-
+Curve.SetGauge(1.067);
 Curve.Interpolate(0, 0);
+
+include '../trains\Trains_1145M.txt';
+
 600;
-Curve.Interpolate(-160, -0.105);
+Curve.Interpolate(-200, -0.05);
+repeater['Form_L'].Begin(0,0,0,0,0,0,0,1,4.8,4.8,'Form_L');
+repeater['Form_CL'].Begin(0,0,0,0,0,0,0,1,4.8,4.8,'Form_CL');
+repeater['Grass'].Begin('Grass',0,-0.2,0,0,0,0,1,10,10,'Grass');
 
 730;
+Station['Sta1'].Put(1,-2,2);
 #富山口停目
+
+740;
+repeater['Form_L'].End();
+repeater['Form_CL'].End();
 
 743;
 #踏切
 
 900;
-Curve.Interpolate(-160, -0.105);
+Curve.Interpolate(-200, -0.05);
 
 960;
-#富山口踏切 R160終了
+#富山口踏切 R200終了
 Curve.Interpolate(0, 0);
-
+repeater['Grass'].Begin('Grass',0,-0.2,0,0,0,0,1,24,24,'Grass');
 1060;
 Curve.Interpolate(0, 0);
 #橋梁
@@ -86,25 +97,40 @@ Curve.Interpolate(-400, -0.05);
 2070;
 Curve.Interpolate(0, 0);
 
+2100;
+#下奥井ホーム開始
+repeater['Form_L'].Begin(0,0,0,0,0,0,0,1,4.8,4.8,'Form_L');
+repeater['Form_CL'].Begin(0,0,0,0,0,0,0,1,4.8,4.8,'Form_CL');
+
 2110;
 Curve.Interpolate(800, 0.03);
-#下奥井ホーム開始
+
+
 
 2150;
 #R600→(?)終了
 Curve.Interpolate(0, 0);
 
+2195;
+Station['Sta2'].Put(1,-2,2);
+
 2200;
+repeater['Form_L'].End();
+repeater['Form_CL'].End();
 Curve.Interpolate(0, 0);
-Curve.Interpolate(200, 0);
+Curve.Interpolate(250, 0);
 #ホーム端 R200S字
 
-2225;
-Curve.Interpolate(200, 0);
-Curve.Interpolate(-200, 0);
+2215;
+Curve.Interpolate(250, 0);
+Curve.Interpolate(0, 0);
+
+2235;
+Curve.Interpolate(0, 0);
+Curve.Interpolate(-250, 0);
 
 2250;
-Curve.Interpolate(-200, 0);
+Curve.Interpolate(-250, 0);
 Curve.Interpolate(0, 0);
 #下奥井踏切
 
@@ -130,9 +156,15 @@ Curve.Interpolate(0, 0);
 #R600終了
 
 3365;
+repeater['Form_L'].Begin(0,0,0,0,0,0,0,1,4.8,4.8,'Form_L');
+repeater['Form_CL'].Begin(0,0,0,0,0,0,0,1,4.8,4.8,'Form_CL');
 #越中中島ホーム端
 
+3420;
+Station['Sta3'].Put(1,-2,2);
 3425;
+repeater['Form_L'].End();
+repeater['Form_CL'].End();
 #越中中島ホーム端
 
 3440;
@@ -153,22 +185,66 @@ Curve.Interpolate(0, 0);
 4165;
 #ここまで
 
+4195;
+#場内
+
 4250;
 #豊田踏切
 
+4305;
+
 4310;
+repeater['Ballast'].End();
+structure['Sw8_FRM'].Put(0,0,0,0,0,0,0,0,0);
 #城川原待避線分岐機
+Track['nobori'].Position(0,0,173);
+4325;
+repeater['Ballast'].Begin(0,0,0,0,0,0,0,3,5,5,'Ballast5','Ballast6','Ballast7','Ballast8');
+Track['nobori'].Position(0.95,0,0);
+repeater['Ballast1'].Begin('nobori',0,0,0,0,0,0,3,5,5,'Ballast5','Ballast6','Ballast7','Ballast8');
+
+4335;
+Track['nobori'].Position(2.4,0,-100);
 
 4350;
-#側線合流
+repeater['Form_L'].Begin('Form',0,0,0,0,0,0,1,4.8,4.8,'Form_L');
+repeater['Form_CL'].Begin('Form',0,0,0,0,0,0,1,4.8,4.8,'Form_CL');
+repeater['Form_R'].Begin('Form',4,0,0,0,0,0,1,4.8,4.8,'Form_R');
+repeater['Form_CR'].Begin('Form',4,0,0,0,0,0,1,4.8,4.8,'Form_CR');
 
+Track['nobori'].Position(4,0,0);
+#側線合流
+Track['Form'].Position(0,-1.5);
 4355;
 #構内踏切、ホーム端
 
-4440;
+4365;
+Track['Form'].Position(0,0);
+
+4445;
+Station['Sta4'].Put(1,-2,2);
+4450;
+repeater['Form_L'].End();
+repeater['Form_CL'].End();
+repeater['Form_R'].End();
+repeater['Form_CR'].End();
 #ホーム端
 
+4460;
+
+Track['nobori'].Position(4,0,-100);
+
+
 4475;
+Track['nobori'].Position(2.4,0,0);
+4485;
+repeater['Ballast'].End();
+repeater['Ballast1'].End();
+structure['Sw8_MLM'].Put(0,0,0,0,0,0,0,0,0);
+Track['nobori'].Position(0.95,0,137);
+4500;
+repeater['Ballast'].Begin(0,0,0,0,0,0,0,3,5,5,'Ballast1','Ballast2','Ballast3','Ballast4');
+Track['nobori'].Position(0,0);
 #待避線合流
 
 4515;
@@ -192,6 +268,8 @@ Curve.Interpolate(0, 0);
 5625;
 #蓮町ホーム端
 
+5710;
+Station['Sta5'].Put(1,-2,2);
 5715;
 #蓮町ホーム端
 
@@ -207,6 +285,9 @@ Curve.Interpolate(0, 0);
 6310;
 #大広田ホーム端
 
+6385;
+Station['Sta6'].Put(1,-2,2);
+
 6390;
 #大広田ホーム端
 
@@ -218,6 +299,9 @@ Curve.Interpolate(0, 0);
 
 6695;
 #東岩瀬ホーム端
+
+6780;
+Station['Sta7'].Put(1,-2,2);
 
 6785;
 #東岩瀬ホーム端
@@ -237,6 +321,9 @@ Curve.Interpolate(0, 0);
 7245;
 #R400
 
+7300;
+Station['Sta8'].Put(1,-2,2);
+
 7310;
 #競輪場前ホーム端
 
@@ -255,7 +342,10 @@ Curve.Interpolate(0, 0);
 7590;
 #岩瀬浜ホーム端
 
+7675;
+Station['Sta9'].Put(1,-2,2);
 7680;
+
 #岩瀬浜ホーム端、R160
 
 7695;

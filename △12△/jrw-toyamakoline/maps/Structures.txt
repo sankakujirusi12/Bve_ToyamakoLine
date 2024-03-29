@@ -4,16 +4,22 @@ Ballast1,../../../Uchibo20\Structures\Track\OldRail02_5mA.x
 Ballast2,../../../Uchibo20\Structures\Track\OldRail02_5mB.x
 Ballast3,../../../Uchibo20\Structures\Track\OldRail02_5mC.x
 Ballast4,../../../Uchibo20\Structures\Track\OldRail02_5mD.x
-Ballast5,../../../Uchibo20\Structures\Track\OldRail_5mA.x
-Ballast6,../../../Uchibo20\Structures\Track\OldRail_5mB.x
-Ballast25,../../../Uchibo20\Structures\Track\OldRail02_25m.x
+Ballast5,../../../Uchibo20\Structures\Track\tr_bal_5m_A.x
+Ballast6,../../../Uchibo20\Structures\Track\tr_bal_5m_B.x
+Ballast7,../../../Uchibo20\Structures\Track\tr_bal_5m_C.x
+Ballast8,../../../Uchibo20\Structures\Track\tr_bal_5m_D.x
+Ballast1_25,../../../Uchibo20\Structures\Track\OldRail02_25m.x
+Ballast5_25,../../../Uchibo20\Structures\Track\tr_bal_25m.x
+
+Sw8_FRM,../../../Uchibo20\Structures\Track\Sw8_FRM.x
+Sw8_MLM,../../../Uchibo20\Structures\Track\Sw8_MLM.x
 
 Grass,../../../Uchibo20\Structures\Ground\Grass.x
 Bg,../structures\Uchibo20\BackGround\Bg_Fine.x
-Form_CL,../../../Uchibo20\Structures\Sta_Form\formCL_920_5m.x
-Form_CR,../../../Uchibo20\Structures\Sta_Form\formCR_920_5m.x
-Form_L,../../../Uchibo20\Structures\Sta_Form\formL_920_5m.x
-Form_R,../../../Uchibo20\Structures\Sta_Form\formR_920_5m.x
+Form_CL,../../../Uchibo20\Structures\Sta_Form\formCL_5m.x
+Form_CR,../../../Uchibo20\Structures\Sta_Form\formCR_5m.x
+Form_L,../../../Uchibo20\Structures\Sta_Form\formL_5m.x
+Form_R,../../../Uchibo20\Structures\Sta_Form\formR_5m.x
 
 Form_CRsl,../../../Uchibo20\Structures\Sta_Form\formCRsl_920.x
 Form_Rsl,../../../Uchibo20\Structures\Sta_Form\formRsl_920.x
@@ -96,6 +102,26 @@ RoofR,../../../Uchibo20\Structures\Sta_Roof\RoofR_920_5b.x
 RoofCL,../../../Uchibo20\Structures\Sta_Roof\RoofCL_5.x
 RoofCR,../../../Uchibo20\Structures\Sta_Roof\RoofCR_5.x
 
+#-----------------------------------------------------------------信号------------------------------------------------------------------
+#3灯
+Signal3L0_b,../Structures\FCS_TM\ColorSignal\Sig3b0.x
+Signal3L2_b,../Structures\FCS_TM\ColorSignal\Sig3b2.x
+Signal3L4_b,../Structures\FCS_TM\ColorSignal\Sig3b4.x
+Signal3G0,../Structures\FCS_TM\ColorSignal\Flare30.x
+Signal3G2,../Structures\FCS_TM\ColorSignal\Flare32.x
+Signal3G4,../Structures\FCS_TM\ColorSignal\Flare34.x
+
+#信号柱
+Sig_Pole,../Structures\FCS_TM\SigPole\Sig_Pole.x
+
+#-----------------------------------------------------------------入信-------------------------------------------------------------------
+iresin0W,../Structures\FCS_TM\SwitchSig\SigSb_0W.x
+iresin0R,../Structures\FCS_TM\SwitchSig\SigSb_0R.x
+iresin_arm,../Structures\FCS_TM\SwitchSig\SigSb_arm.x
+#識別灯
+Sigib_off,../Structures\FCS_TM\SwitchSig\Sigib_off.x
+Sigib_on,../Structures\FCS_TM\SwitchSig\Sigib_on.x
+
 #駅名標
 
 #---------------------------------------------------------------------踏切-----------------------------------------------------------------------
@@ -132,3 +158,12 @@ TollBarDRt,../../../Uchibo20\Structures\Crossing\TollBarDRt.x
 Cr_Crossing_DL,../../../Uchibo20\Structures\Crossing\Cr_CrossingDL.x
 Cr_Crossing_DR,../../../Uchibo20\Structures\Crossing\Cr_CrossingDR.x
 Crossing_D,../../../Uchibo20\Structures\Crossing\CrossingD.x
+
+#-----------------------------------------------------------車両------------------------
+DC120,../structures\kotobuki\DC120_1end\DC120_toya.x
+DC120_toyama,../structures\kotobuki\DC120_1end\maku\toyama.x
+Tc455,../structures\saha209\475\475_1.x
+Tc455D,../structures\saha209\475\475_1d.x
+M474,../structures\saha209\475\475_2.x
+Mc475,../structures\saha209\475\475_3.x
+Mc475d,../structures\saha209\475\475_3d.x
