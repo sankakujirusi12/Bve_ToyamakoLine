@@ -11,7 +11,7 @@ Station.Load('Stations_1145M.csv');
 Light.Ambient(0.9, 0.86, 0.86);
 Light.Diffuse(1, 1, 1);
 Light.Direction(55, -40);
-Irregularity.Change( 0.0010, 0.0040, 0.0010, 50, 25, 12.5 );	
+Irregularity.Change(0.003184857, 0.001990536, 0.001254038, 25, 25, 25);	
 BackGround.Change('Bg');
 repeater['Ballast'].Begin(0,0,0,0,0,0,0,3,5,5,'Ballast1','Ballast2','Ballast3','Ballast4');
 repeater['Grass'].Begin('Grass',0,-0.3,0,0,0,0,1,24,24,'Grass');
@@ -29,39 +29,185 @@ repeater['Form_L'].Begin(0,0,0,0,0,0,0,1,4.8,4.8,'Form_L');
 repeater['Form_CL'].Begin(0,0,0,0,0,0,0,1,4.8,4.8,'Form_CL');
 repeater['Grass'].Begin('Grass',0,-0.2,0,0,0,0,1,10,10,'Grass');
 
-730;
+700;
 Station['Sta1'].Put(1,-2,2);
 #富山口停目
+structure['Pole10RLarmless'].Put(0,0,0,0,0,0,0,0,0);
+structure['Trolley20'].Put(0,0,0,0,0,0,0,1,20);
 
-740;
+705;
 repeater['Form_L'].End();
 repeater['Form_CL'].End();
 
+720;
+structure['Pole10RLarmless'].Put(0,0,0,0,0,0,0,0,0);
+structure['Trolley20'].Put(0,0,0,0,0,0,0,1,20);
+740;
+structure['Pole10RLarmless'].Put(0,0,0,0,0,0,0,0,0);
+structure['Trolley20'].Put(0,0,0,0,0,0,0,1,20);
+
 743;
+#*********************************踏切統一構文(二車線用)**************************
+
+structure['CrossSign'].Put(0,-2,0,5.5,0,90,0,0,4);
+structure['CrossPole'].Put(0,-2,0,5.5,0,90,0,0,4);
+structure['CrossSig'].Put(0,-2,0,5.5,0,90,0,0,4);
+structure['CrossTrap'].Put(0,-2,0,5.5,0,90,0,0,4);
+
+structure['GateL'].Put(0,-2,0,5,0,90,0,0,4);
+structure['Gate450L'].Put(0,-2,0,5,0,90,0,0,4);
+structure['GateR'].Put(0,-2,0,-4.5,0,90,0,0,4);
+structure['Gate450R'].Put(0,-2,0,-4.5,0,90,0,0,4);
+
+structure['TollBarDLt'].Put(0,0,-0.1,-2,0,0,0,0,4);
+structure['Cr_Crossing_DR'].Put(0,0,0,-2,0,0,0,0,4);
+structure['Crossing_D'].Put(0,0,0,-2,0,0,0,2,4);
+structure['TollBarDRt'].Put('',0,0,-2,0,0,0,0,4);
+
+structure['GateR'].Put('',2,0,5,0,-90,0,0,4);
+structure['Gate450R'].Put('',2,0,5,0,-90,0,0,4);
+structure['GateL'].Put('',2,0,-4.5,0,-90,0,0,4);
+structure['Gate450L'].Put('',2,0,-4.5,0,-90,0,0,4);
+
+
+structure['CrossSign'].Put('',2,0,-5,0,-90,0,0,4);
+structure['CrossPole'].Put('',2,0,-5,0,-90,0,0,4);
+structure['CrossSig'].Put('',2,0,-5,0,-90,0,0,4);
+structure['CrossTrap'].Put('',2,0,-5,0,-90,0,0,4);
+
+
+#Sound3D['cross'].Put(-1.5, 2.3);
+#Sound3D['cross'].Put(14.5, 2.3);
+
+structure['shoken2'].Put(0,-1.5,0,-4,0,0,0,0,2);
+structure['shoken1'].Put(0,-1.5,0,4,0,0,0,0,2);
+structure['shoken2'].Put(0,2,0,-4,0,0,0,0,2);
+structure['shoken1'].Put(0,2,0,4,0,0,0,0,2);
+
+#********************************************************************
 #踏切
+
+760;
+structure['Pole10RLarmless_large'].Put(0,-0.2,0,0,0,0,0,0,0);
+structure['Trolley30'].Put(0,0,0,0,0,0,0,1,30);
+
+790;
+structure['Pole10RLarmless_large'].Put(0,-0.2,0,0,0,0,0,0,0);
+structure['Trolley30'].Put(0,0,0,0,0,0,0,1,30);
+
+820;
+structure['Pole10RLarmless_large'].Put(0,-0.2,0,0,0,0,0,0,0);
+structure['Trolley30'].Put(0,0,0,0,0,0,0,1,30);
+
+850;
+structure['Pole10RLarmless_large'].Put(0,-0.2,0,0,0,0,0,0,0);
+structure['Trolley30'].Put(0,0,0,0,0,0,0,1,30);
+
+880;
+structure['Pole10RLarmless_large'].Put(0,-0.2,0,0,0,0,0,0,0);
+structure['Trolley30'].Put(0,0,0,0,0,0,0,1,30);
 
 900;
 Curve.Interpolate(-200, -0.05);
+
+910;
+structure['Pole10RLarmless_large'].Put(0,-0.2,0,0,0,0,0,0,0);
+structure['Trolley30'].Put(0,0,0,0,0,0,0,1,30);
+
+940;
+structure['Pole10RLarmless'].Put(0,0,0,0,0,0,0,0,0);
+structure['Trolley50'].Put(0,0,0,0,0,0,0,1,50);
 
 960;
 #富山口踏切 R200終了
 Curve.Interpolate(0, 0);
 repeater['Grass'].Begin('Grass',0,-0.2,0,0,0,0,1,24,24,'Grass');
+
+#*********************************踏切統一構文(一車線用)**************************
+
+structure['CrossSign'].Put(0,-2,0,2.5,0,90,0,0,2);
+structure['CrossPole'].Put(0,-2,0,2.5,0,90,0,0,2);
+structure['CrossSig'].Put(0,-2,0,2.5,0,90,0,0,2);
+structure['CrossTrap'].Put(0,-2,0,2.5,0,90,0,0,2);
+
+structure['Gatebox'].Put(0,-2,0,-0.5,0,90,0,0,2);
+structure['Gate250L'].Put(0,-2,0,-0.5,0,90,0,0,2);
+
+structure['TollBarSLt'].Put(0,0,0,0,0,0,0,0,2);
+structure['Cr_Crossing_SR'].Put(0,0,0,0,0,0,0,0,2);
+structure['Crossing_S'].Put(0,0,0,0,0,0,0,0,2);
+
+structure['TollBarSRt'].Put('',0,0,0,0,0,0,0,2);
+
+structure['Gate250R'].Put('',2,0,-0.5,0,-90,0,0,2);
+structure['Gatebox'].Put('',2,0,-0.5,0,-90,0,0,2);
+
+structure['CrossSign'].Put('',2,0,-1.5,0,-90,0,0,2);
+structure['CrossPole'].Put('',2,0,-1.5,0,-90,0,0,2);
+structure['CrossSig'].Put('',2,0,-1.5,0,-90,0,0,2);
+structure['CrossTrap'].Put('',2,0,-1.5,0,-90,0,0,2);
+
+
+Sound3D['cross'].Put(-1.5, 2.3);
+Sound3D['cross'].Put(5.5, 2.3);
+
+structure['shoken2'].Put(0,-1.5,0,-4,0,0,0,0,2);
+structure['shoken1'].Put(0,-1.5,0,4,0,0,0,0,2);
+structure['shoken2'].Put(0,2,0,-4,0,0,0,0,2);
+structure['shoken1'].Put(0,2,0,4,0,0,0,0,2);
+
+#********************************************************************
+
+990;
+structure['Pole10RBarmless'].Put(0,0,0,0,0,0,0,0,0);
+structure['Trolley45'].Put(0,0,0,0,0,0,0,1,45);
+
+1035;
+structure['Pole_1sen_1R'].Put(0,0,-0.1,0,0,0,0,0,0);
+structure['Trolley45'].Put(0,0,0,0,0,0,0,1,45);
+
 1060;
 Curve.Interpolate(0, 0);
 #橋梁
 
 1080;
-Curve.Interpolate(-200, -0.105);
+Curve.Interpolate(-200, -0.06);
 #橋梁終了 R200
+structure['Pole_1sen_1R'].Put(0,0,-0.1,0,0,0,0,0,0);
+structure['Trolley20'].Put(0,0,0,0,0,0,0,1,20);
 
-1130;
-Curve.Interpolate(-200, -0.105);
+1100;
+structure['Pole'].Put(0,2.5,0,0,0,0,0,0,0);
+structure['Trolley20'].Put(0,0,0,0,0,0,0,1,20);
+
+1120;
+structure['Pole_1sen_1R'].Put(0,0,-0.1,0,0,0,0,0,0);
+structure['Trolley20'].Put(0,0,0,0,0,0,0,1,20);
+
+1140;
+structure['Pole'].Put(0,2.9,0,0,0,0,0,0,0);
+structure['CrossarmR'].Put(0,0,0,0,0,0,0,0,0);
+structure['Trolley30'].Put(0,0,0,0,0,0,0,1,30);
+
 1150;
-Curve.Interpolate(0, 0);
+Curve.Interpolate(-200, -0.06);
 #R200終了
 
-1250;
+1170;
+structure['Pole_1sen_1R'].Put(0,0,-0.1,0,0,0,0,0,0);
+structure['Trolley45'].Put(0,0,0,0,0,0,0,1,45);
+
+1180;
+Curve.Interpolate(0, 0);
+
+1215;
+structure['Pole10RBarmless'].Put(0,0,0,0,0,0,0,0,0);
+structure['Trolley45'].Put(0,0,0,0,0,0,0,1,45);
+
+1260;
+structure['R11An'].Put(0,0,0,0,0,0,0,0,0);
+
+1270;
 #中学校踏切(2車線)
 
 1355;

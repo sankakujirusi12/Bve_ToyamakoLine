@@ -95,6 +95,25 @@ BlankR_03,../../../Uchibo20\Structures\Dike\blank_R03.x
 
 ATS-SN,../../../Uchibo20\Structures\Signal\Beacon\ATSS_Sc.x
 
+#架線柱
+Pole,../structures\tomari\Pole\Pole.x
+R11An,../structures\tomari\Pole\R11An.x
+Pole10RBarmless,../structures\tomari\Pole\Pole10RBarmless.x
+Pole10RLarmless,../structures\tomari\Pole\Pole10RLarmless.x
+Pole10RLarmless_large,../structures\tomari\Pole\Pole10RLarmless_large.x
+
+Pole_1sen_1R,../structures\sankakujirusi12\poletruss\Pole_1sen_1R.x
+
+#き電線
+CrossarmR,../structures\tomari\Pole\CrossarmR.x
+
+#架線
+Trolley20,../structures\tomari\Wire\Trolley20.x
+Trolley30,../structures\tomari\Wire\Trolley30.x
+Trolley40,../structures\tomari\Wire\Trolley40.x
+Trolley45,../structures\tomari\Wire\Trolley45.x
+Trolley50,../structures\tomari\Wire\Trolley50.x
+
 #駅の屋根(ホームにも代用)
 RoofL,../../../Uchibo20\Structures\Sta_Roof\RoofL_920_5b.x
 RoofR,../../../Uchibo20\Structures\Sta_Roof\RoofR_920_5b.x
@@ -158,6 +177,10 @@ TollBarDRt,../../../Uchibo20\Structures\Crossing\TollBarDRt.x
 Cr_Crossing_DL,../../../Uchibo20\Structures\Crossing\Cr_CrossingDL.x
 Cr_Crossing_DR,../../../Uchibo20\Structures\Crossing\Cr_CrossingDR.x
 Crossing_D,../../../Uchibo20\Structures\Crossing\CrossingD.x
+
+shoken2,../structures\Ntfiv\CrossAcc\shoken2.x
+FmBox,../structures\Ntfiv\CrossAcc\FmBox.x
+shoken1,../structures\Ntfiv\CrossAcc\shoken1.x
 
 #-----------------------------------------------------------車両------------------------
 DC120,../structures\kotobuki\DC120_1end\DC120_toya.x

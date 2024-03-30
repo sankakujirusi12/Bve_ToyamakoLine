@@ -1,8 +1,9 @@
 BveTs Map 2.00:UTF-8
 0;
 Train['1144'].Load('../trains\475_3_1.txt', 'nobori', -1);
-Train['1144'].Enable('16:20:00');
-5650;
-Train['1144'].Stop(1.5, 30, 2.4, 25);
+Train['1144'].Stop(1.5, 90, 2.4, 50);
+
 4370;
+Train['1144'].Enable('16:22:00');
+
 Train['1144'].Stop(1.5, 30, 2.4, 50);
